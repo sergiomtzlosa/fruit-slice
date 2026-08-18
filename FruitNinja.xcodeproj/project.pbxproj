@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0079AE740D766602259DE85F /* menu_background.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C8A74C71C84C746A05B870 /* menu_background.png */; };
+		06788B925B75DBEA7195AB39 /* fruit_kiwi.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3A89F1C3A0C4CA4DC40961 /* fruit_kiwi.png */; };
+		07C81EF15882262A599C09AD /* FruitKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F753DAFA090366085DCEA8 /* FruitKind.swift */; };
+		08BC01BD926D068A2DC8A23B /* BladeTrailNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F72AA1F9FF86EA464F1C19 /* BladeTrailNode.swift */; };
+		0BF072380D1C6ACCDB88136D /* fruit_orange_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 3529648F2480BDB3670964B0 /* fruit_orange_half.png */; };
+		0D1B1F93102E20B7B1ABC29A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C2A04DD8E263EE512798F1 /* AppDelegate.swift */; };
+		1382A02B8F0E5411915596BD /* fruit_pineapple.png in Resources */ = {isa = PBXBuildFile; fileRef = C3903052BD3D6C1BA5A6B5C9 /* fruit_pineapple.png */; };
+		24BA76AF01D351D52F950AB8 /* FNOneEuroFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FD38D44C916AB7E3A7E60B /* FNOneEuroFilter.m */; };
+		2948FDD72544D3AEE2B24B71 /* SliceDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8CFEC51F148821C040D39 /* SliceDetectorTests.swift */; };
+		2AFE50614A6DF6D11F6DC237 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB60767A0A0B59A56F6FBE /* Theme.swift */; };
+		2D9B81CC4D2177E529C84EA1 /* FNHandSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AB9AFD7571F745B54CDAAC /* FNHandSample.m */; };
+		311AD8A80C77A22FE90ABB0D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15577483DB1A811B71E2ECCA /* GameScene.swift */; };
+		33D586608F16718C15F964AA /* sfx_tick.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2E76085CDB2369AF58955517 /* sfx_tick.caf */; };
+		36E74C636C0FC826659DD315 /* SliceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA1806851513F70B7AF427 /* SliceDetector.swift */; };
+		47214DB8D81875462F790BA7 /* music_menu.caf in Resources */ = {isa = PBXBuildFile; fileRef = 36B36C28BD86B4D9ECB823DE /* music_menu.caf */; };
+		5432F8FEA936D7E6C0CBB842 /* sfx_click.caf in Resources */ = {isa = PBXBuildFile; fileRef = 111A6552B6D628FABCDC6439 /* sfx_click.caf */; };
+		5671F305476B993BF0019370 /* sfx_countdown.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3F88BD65F4A42B4BBCDB2098 /* sfx_countdown.caf */; };
+		570AD639313BE3D28B716571 /* LeaderboardTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C84DEBC92D825E225AFB3 /* LeaderboardTable.swift */; };
+		5F4685DED4F7F00FE473C8B0 /* sfx_game_over.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D05AD5AEFBD9577EF3F68 /* sfx_game_over.caf */; };
+		6486FE21745CE2EBAA8B843A /* fruit_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A61340FBFA67B9DDA4A90CA /* fruit_orange.png */; };
+		6577F86D64150BD0DDB5E230 /* fruit_pineapple_half.png in Resources */ = {isa = PBXBuildFile; fileRef = D93E72260693B2117AA04643 /* fruit_pineapple_half.png */; };
+		738ED4B9D6D73F94FD0751D7 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2E08621D4F763494864688 /* GameOverView.swift */; };
+		7B41FB925DC5FE0949D708DD /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A85CDCF08980DD01B3FE5 /* MenuView.swift */; };
+		8286185ABB4AE8D32F21A378 /* LeaderboardStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF791C9A4C30BEE2D914E9A8 /* LeaderboardStoreTests.swift */; };
+		86D1F4A0DE089DC111B0B79C /* music_game.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5F6E757B3090CB39659D5F7C /* music_game.caf */; };
+		906F6D95476501F9BF5DEB79 /* fruit_kiwi_half.png in Resources */ = {isa = PBXBuildFile; fileRef = F127B186604F16C44E98C417 /* fruit_kiwi_half.png */; };
+		915901CA29F82DE0AEFFB231 /* LeaderboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B4DBAD0307EE2CE21B736 /* LeaderboardStore.swift */; };
+		94911DBBFCC457327DFEC7BE /* fruit_watermelon_half.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A0595756D9A54C664BAC19 /* fruit_watermelon_half.png */; };
+		95511868E54960F618F24DE9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EEF5A73785AC13ADA18C0 /* SettingsView.swift */; };
+		969560E31235045DC1384B84 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC092FE0E70342DE725577C2 /* MainWindowController.swift */; };
+		98296EAAC67508CC609E655F /* fruit_dragonfruit_half.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5F5D9AFCA0DDC36DE6C782 /* fruit_dragonfruit_half.png */; };
+		A10B049E8796AE23213F52C9 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 54D7ECE03C0E47528DE095B6 /* AppIcon.icns */; };
+		A65FA0237763F4B62EB8ABE6 /* FNHandTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DEF46A02E1935B4B416692 /* FNHandTracker.m */; };
+		ABD797B0AFB2A3E2D15BE323 /* fruit_apple.png in Resources */ = {isa = PBXBuildFile; fileRef = AB788CE8EE970C4858ADD5C5 /* fruit_apple.png */; };
+		ABE209401C28C1E976FF8E60 /* FruitNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75944E5D601DBACA6CB56292 /* FruitNode.swift */; };
+		AE4781A1122D24FF5B50CAF7 /* GameSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CABA4D47824FAA591606B /* GameSessionTests.swift */; };
+		B614FF947C6373EAD542576E /* sfx_slice.caf in Resources */ = {isa = PBXBuildFile; fileRef = B58E81BB1A99648B79198B60 /* sfx_slice.caf */; };
+		B6B73406619E491E9866A10C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = E90EBAA4C76C8696715F855C /* spark.png */; };
+		BA05044BB796B1090C7CB4B0 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B627B37B429951FC7BD85D7 /* AudioManager.swift */; };
+		BA5184A1B6CC24E57ED3E69F /* sfx_go.caf in Resources */ = {isa = PBXBuildFile; fileRef = 48705746F5C565884E440670 /* sfx_go.caf */; };
+		BEB87C65A174D17741B0E485 /* sfx_combo.caf in Resources */ = {isa = PBXBuildFile; fileRef = D5A17D878DA6EFD613A8F7E6 /* sfx_combo.caf */; };
+		CB16C8414B61D42B0DE60FA0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCA13B99A12AFE12820F96E /* RootViewController.swift */; };
+		D1C372276C344D14327EEA9B /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0AACB024C93157D7F9187 /* Difficulty.swift */; };
+		D775152E11D221A019F8AA34 /* sfx_bomb.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7E8FD1153A276F1128EEA7EC /* sfx_bomb.caf */; };
+		DA2A842F0B5BAD5F375947FD /* fruit_apple_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 87376A673A6B0C1E36B60F6A /* fruit_apple_half.png */; };
+		ECD64ED470BE2EC1CBBDA465 /* DebugCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0EF5E489FE155C4369B885 /* DebugCapture.swift */; };
+		ED313CEA66708688590D8B09 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC3E1AD786100307BA29C4D /* bomb.png */; };
+		EE540A4D8B289A70344D76FB /* DifficultyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94DF857A56B2D9D59C519D /* DifficultyTests.swift */; };
+		F1CE9E75DB517F6B74CC7279 /* fruit_dragonfruit.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F92BD5A9864C2B2889D0A /* fruit_dragonfruit.png */; };
+		F2150F61514F517EEB572C56 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF276432283A4818086B7BE /* main.swift */; };
+		F23DE86AA4EC00C70A903ED4 /* fruit_watermelon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2821DDD08AD2F083BECE82C7 /* fruit_watermelon.png */; };
+		F31CB6AE9EAC3C5D1AB1253D /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882747EDDBDF3A0A5E36D5C /* SettingsStore.swift */; };
+		F552B118BE5BDDD9096B964D /* OneEuroFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C520477454D6EED6D7BAE26A /* OneEuroFilterTests.swift */; };
+		F8499B155D389FE534B1D01B /* sfx_life_lost.caf in Resources */ = {isa = PBXBuildFile; fileRef = 21AB4CE8D858A96674BE3D5F /* sfx_life_lost.caf */; };
+		F9AC11E5EC563974E30EA2C3 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2AEC715755F2D7F4596379 /* LeaderboardView.swift */; };
+		FAAB2C4B9621CBC4A71EF123 /* sfx_life_gain.caf in Resources */ = {isa = PBXBuildFile; fileRef = CF26B18FDA08A53730415E96 /* sfx_life_gain.caf */; };
+		FC1DE7A1795EF2CD7465218E /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EEB63E36A7409C88F5CD6C /* GameSession.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59E76E5FFB3B14677D394501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C01E25BB39CE0A97B4A62172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 061AC89B98683DC50256F5F6;
+			remoteInfo = FruitNinja;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		111A6552B6D628FABCDC6439 /* sfx_click.caf */ = {isa = PBXFileReference; path = sfx_click.caf; sourceTree = "<group>"; };
+		15577483DB1A811B71E2ECCA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		21AB4CE8D858A96674BE3D5F /* sfx_life_lost.caf */ = {isa = PBXFileReference; path = sfx_life_lost.caf; sourceTree = "<group>"; };
+		255B4DBAD0307EE2CE21B736 /* LeaderboardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardStore.swift; sourceTree = "<group>"; };
+		2821DDD08AD2F083BECE82C7 /* fruit_watermelon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_watermelon.png; sourceTree = "<group>"; };
+		2E76085CDB2369AF58955517 /* sfx_tick.caf */ = {isa = PBXFileReference; path = sfx_tick.caf; sourceTree = "<group>"; };
+		31F72AA1F9FF86EA464F1C19 /* BladeTrailNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BladeTrailNode.swift; sourceTree = "<group>"; };
+		3529648F2480BDB3670964B0 /* fruit_orange_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_orange_half.png; sourceTree = "<group>"; };
+		35EEB63E36A7409C88F5CD6C /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		36B36C28BD86B4D9ECB823DE /* music_menu.caf */ = {isa = PBXFileReference; path = music_menu.caf; sourceTree = "<group>"; };
+		37100D83D485F9806F5D14CC /* FruitNinja-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FruitNinja-Bridging-Header.h"; sourceTree = "<group>"; };
+		3882747EDDBDF3A0A5E36D5C /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		3B627B37B429951FC7BD85D7 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		3F88BD65F4A42B4BBCDB2098 /* sfx_countdown.caf */ = {isa = PBXFileReference; path = sfx_countdown.caf; sourceTree = "<group>"; };
+		48705746F5C565884E440670 /* sfx_go.caf */ = {isa = PBXFileReference; path = sfx_go.caf; sourceTree = "<group>"; };
+		4C8C84DEBC92D825E225AFB3 /* LeaderboardTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTable.swift; sourceTree = "<group>"; };
+		54D7ECE03C0E47528DE095B6 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		5BC3E1AD786100307BA29C4D /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb.png; sourceTree = "<group>"; };
+		5F6E757B3090CB39659D5F7C /* music_game.caf */ = {isa = PBXFileReference; path = music_game.caf; sourceTree = "<group>"; };
+		6D0D681606D40C5700CCFEEC /* FNHandSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNHandSample.h; sourceTree = "<group>"; };
+		72FD38D44C916AB7E3A7E60B /* FNOneEuroFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNOneEuroFilter.m; sourceTree = "<group>"; };
+		75944E5D601DBACA6CB56292 /* FruitNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNode.swift; sourceTree = "<group>"; };
+		7E8FD1153A276F1128EEA7EC /* sfx_bomb.caf */ = {isa = PBXFileReference; path = sfx_bomb.caf; sourceTree = "<group>"; };
+		87376A673A6B0C1E36B60F6A /* fruit_apple_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_apple_half.png; sourceTree = "<group>"; };
+		8A61340FBFA67B9DDA4A90CA /* fruit_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_orange.png; sourceTree = "<group>"; };
+		8C7F92BD5A9864C2B2889D0A /* fruit_dragonfruit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_dragonfruit.png; sourceTree = "<group>"; };
+		8CF276432283A4818086B7BE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		901EEF5A73785AC13ADA18C0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		91DEF46A02E1935B4B416692 /* FNHandTracker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNHandTracker.m; sourceTree = "<group>"; };
+		93AB9AFD7571F745B54CDAAC /* FNHandSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNHandSample.m; sourceTree = "<group>"; };
+		9E5D05AD5AEFBD9577EF3F68 /* sfx_game_over.caf */ = {isa = PBXFileReference; path = sfx_game_over.caf; sourceTree = "<group>"; };
+		A3B8B62B8191DABFC22F7FE9 /* FNOneEuroFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNOneEuroFilter.h; sourceTree = "<group>"; };
+		A7F753DAFA090366085DCEA8 /* FruitKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitKind.swift; sourceTree = "<group>"; };
+		AB0EF5E489FE155C4369B885 /* DebugCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugCapture.swift; sourceTree = "<group>"; };
+		AB2E08621D4F763494864688 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		AB788CE8EE970C4858ADD5C5 /* fruit_apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_apple.png; sourceTree = "<group>"; };
+		AC092FE0E70342DE725577C2 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		B58E81BB1A99648B79198B60 /* sfx_slice.caf */ = {isa = PBXFileReference; path = sfx_slice.caf; sourceTree = "<group>"; };
+		B9C8A74C71C84C746A05B870 /* menu_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_background.png; sourceTree = "<group>"; };
+		BD3A89F1C3A0C4CA4DC40961 /* fruit_kiwi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_kiwi.png; sourceTree = "<group>"; };
+		C2A0595756D9A54C664BAC19 /* fruit_watermelon_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_watermelon_half.png; sourceTree = "<group>"; };
+		C3903052BD3D6C1BA5A6B5C9 /* fruit_pineapple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_pineapple.png; sourceTree = "<group>"; };
+		C520477454D6EED6D7BAE26A /* OneEuroFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneEuroFilterTests.swift; sourceTree = "<group>"; };
+		CA2AEC715755F2D7F4596379 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		CA9CABA4D47824FAA591606B /* GameSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSessionTests.swift; sourceTree = "<group>"; };
+		CD5F5D9AFCA0DDC36DE6C782 /* fruit_dragonfruit_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_dragonfruit_half.png; sourceTree = "<group>"; };
+		CDCA13B99A12AFE12820F96E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		CF26B18FDA08A53730415E96 /* sfx_life_gain.caf */ = {isa = PBXFileReference; path = sfx_life_gain.caf; sourceTree = "<group>"; };
+		D0E0AACB024C93157D7F9187 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		D5A17D878DA6EFD613A8F7E6 /* sfx_combo.caf */ = {isa = PBXFileReference; path = sfx_combo.caf; sourceTree = "<group>"; };
+		D93E72260693B2117AA04643 /* fruit_pineapple_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_pineapple_half.png; sourceTree = "<group>"; };
+		DE0F8F29C991D50562F3EE14 /* FruitNinjaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitNinjaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BB60767A0A0B59A56F6FBE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E3C2A04DD8E263EE512798F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8CE6AADA03E717B4DCBBF09 /* FruitNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8DA1806851513F70B7AF427 /* SliceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceDetector.swift; sourceTree = "<group>"; };
+		E90EBAA4C76C8696715F855C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		EE2A85CDCF08980DD01B3FE5 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		EF791C9A4C30BEE2D914E9A8 /* LeaderboardStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardStoreTests.swift; sourceTree = "<group>"; };
+		F0B8CFEC51F148821C040D39 /* SliceDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceDetectorTests.swift; sourceTree = "<group>"; };
+		F0F44EADDAF9AC7188357E56 /* FNHandTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNHandTracker.h; sourceTree = "<group>"; };
+		F127B186604F16C44E98C417 /* fruit_kiwi_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_kiwi_half.png; sourceTree = "<group>"; };
+		FF94DF857A56B2D9D59C519D /* DifficultyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		037AF2485431FD64CB1376A1 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				5F6E757B3090CB39659D5F7C /* music_game.caf */,
+				36B36C28BD86B4D9ECB823DE /* music_menu.caf */,
+				7E8FD1153A276F1128EEA7EC /* sfx_bomb.caf */,
+				111A6552B6D628FABCDC6439 /* sfx_click.caf */,
+				D5A17D878DA6EFD613A8F7E6 /* sfx_combo.caf */,
+				3F88BD65F4A42B4BBCDB2098 /* sfx_countdown.caf */,
+				9E5D05AD5AEFBD9577EF3F68 /* sfx_game_over.caf */,
+				48705746F5C565884E440670 /* sfx_go.caf */,
+				CF26B18FDA08A53730415E96 /* sfx_life_gain.caf */,
+				21AB4CE8D858A96674BE3D5F /* sfx_life_lost.caf */,
+				B58E81BB1A99648B79198B60 /* sfx_slice.caf */,
+				2E76085CDB2369AF58955517 /* sfx_tick.caf */,
+			);
+			name = Audio;
+			path = FruitNinja/Resources/Audio;
+			sourceTree = "<group>";
+		};
+		20E57473ED161DBFFC1B472E /* FruitNinjaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF94DF857A56B2D9D59C519D /* DifficultyTests.swift */,
+				CA9CABA4D47824FAA591606B /* GameSessionTests.swift */,
+				EF791C9A4C30BEE2D914E9A8 /* LeaderboardStoreTests.swift */,
+				C520477454D6EED6D7BAE26A /* OneEuroFilterTests.swift */,
+				F0B8CFEC51F148821C040D39 /* SliceDetectorTests.swift */,
+			);
+			path = FruitNinjaTests;
+			sourceTree = "<group>";
+		};
+		2B7198C7A5E51FD421523E62 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E08621D4F763494864688 /* GameOverView.swift */,
+				4C8C84DEBC92D825E225AFB3 /* LeaderboardTable.swift */,
+				CA2AEC715755F2D7F4596379 /* LeaderboardView.swift */,
+				EE2A85CDCF08980DD01B3FE5 /* MenuView.swift */,
+				CDCA13B99A12AFE12820F96E /* RootViewController.swift */,
+				901EEF5A73785AC13ADA18C0 /* SettingsView.swift */,
+				E1BB60767A0A0B59A56F6FBE /* Theme.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2E5B59F28C96469043D4E4EB /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				6D0D681606D40C5700CCFEEC /* FNHandSample.h */,
+				93AB9AFD7571F745B54CDAAC /* FNHandSample.m */,
+				F0F44EADDAF9AC7188357E56 /* FNHandTracker.h */,
+				91DEF46A02E1935B4B416692 /* FNHandTracker.m */,
+				A3B8B62B8191DABFC22F7FE9 /* FNOneEuroFilter.h */,
+				72FD38D44C916AB7E3A7E60B /* FNOneEuroFilter.m */,
+				37100D83D485F9806F5D14CC /* FruitNinja-Bridging-Header.h */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		76D67D32521626518B979BD4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E3C2A04DD8E263EE512798F1 /* AppDelegate.swift */,
+				AB0EF5E489FE155C4369B885 /* DebugCapture.swift */,
+				8CF276432283A4818086B7BE /* main.swift */,
+				AC092FE0E70342DE725577C2 /* MainWindowController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		925E76732A83497AAB190FE2 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				5BC3E1AD786100307BA29C4D /* bomb.png */,
+				87376A673A6B0C1E36B60F6A /* fruit_apple_half.png */,
+				AB788CE8EE970C4858ADD5C5 /* fruit_apple.png */,
+				CD5F5D9AFCA0DDC36DE6C782 /* fruit_dragonfruit_half.png */,
+				8C7F92BD5A9864C2B2889D0A /* fruit_dragonfruit.png */,
+				F127B186604F16C44E98C417 /* fruit_kiwi_half.png */,
+				BD3A89F1C3A0C4CA4DC40961 /* fruit_kiwi.png */,
+				3529648F2480BDB3670964B0 /* fruit_orange_half.png */,
+				8A61340FBFA67B9DDA4A90CA /* fruit_orange.png */,
+				D93E72260693B2117AA04643 /* fruit_pineapple_half.png */,
+				C3903052BD3D6C1BA5A6B5C9 /* fruit_pineapple.png */,
+				C2A0595756D9A54C664BAC19 /* fruit_watermelon_half.png */,
+				2821DDD08AD2F083BECE82C7 /* fruit_watermelon.png */,
+				B9C8A74C71C84C746A05B870 /* menu_background.png */,
+				E90EBAA4C76C8696715F855C /* spark.png */,
+			);
+			name = Art;
+			path = FruitNinja/Resources/Art;
+			sourceTree = "<group>";
+		};
+		9BDA3B8C813476DBDEDFCFB1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B627B37B429951FC7BD85D7 /* AudioManager.swift */,
+				255B4DBAD0307EE2CE21B736 /* LeaderboardStore.swift */,
+				3882747EDDBDF3A0A5E36D5C /* SettingsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A9D3AFC13BDA8FCBA76EE02F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				31F72AA1F9FF86EA464F1C19 /* BladeTrailNode.swift */,
+				D0E0AACB024C93157D7F9187 /* Difficulty.swift */,
+				A7F753DAFA090366085DCEA8 /* FruitKind.swift */,
+				75944E5D601DBACA6CB56292 /* FruitNode.swift */,
+				15577483DB1A811B71E2ECCA /* GameScene.swift */,
+				35EEB63E36A7409C88F5CD6C /* GameSession.swift */,
+				E8DA1806851513F70B7AF427 /* SliceDetector.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		AD97EF8DDCE4F258A46F5A86 = {
+			isa = PBXGroup;
+			children = (
+				925E76732A83497AAB190FE2 /* Art */,
+				037AF2485431FD64CB1376A1 /* Audio */,
+				E48FA68D7DC3D2B776DB3E38 /* FruitNinja */,
+				20E57473ED161DBFFC1B472E /* FruitNinjaTests */,
+				DF851377BF53481CA60EC6FE /* Resources */,
+				EBD7B7B8AE1C9864EB5939B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF851377BF53481CA60EC6FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				54D7ECE03C0E47528DE095B6 /* AppIcon.icns */,
+			);
+			name = Resources;
+			path = FruitNinja/Resources;
+			sourceTree = "<group>";
+		};
+		E48FA68D7DC3D2B776DB3E38 /* FruitNinja */ = {
+			isa = PBXGroup;
+			children = (
+				76D67D32521626518B979BD4 /* App */,
+				A9D3AFC13BDA8FCBA76EE02F /* Game */,
+				9BDA3B8C813476DBDEDFCFB1 /* Services */,
+				2E5B59F28C96469043D4E4EB /* Tracking */,
+				2B7198C7A5E51FD421523E62 /* UI */,
+			);
+			path = FruitNinja;
+			sourceTree = "<group>";
+		};
+		EBD7B7B8AE1C9864EB5939B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8CE6AADA03E717B4DCBBF09 /* FruitNinja.app */,
+				DE0F8F29C991D50562F3EE14 /* FruitNinjaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		061AC89B98683DC50256F5F6 /* FruitNinja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA675654B4FCC965805FB8EF /* Build configuration list for PBXNativeTarget "FruitNinja" */;
+			buildPhases = (
+				C2370A585C6278EE04164F2B /* Sources */,
+				F70C368F79B286EDB2C95402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FruitNinja;
+			packageProductDependencies = (
+			);
+			productName = FruitNinja;
+			productReference = E8CE6AADA03E717B4DCBBF09 /* FruitNinja.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C7BBA3029F487100D95031C /* FruitNinjaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D426199F57EC45BB974BA11 /* Build configuration list for PBXNativeTarget "FruitNinjaTests" */;
+			buildPhases = (
+				B1ABEAA09F24011C44DAEDB0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93EB7B11E055B01E267647FA /* PBXTargetDependency */,
+			);
+			name = FruitNinjaTests;
+			packageProductDependencies = (
+			);
+			productName = FruitNinjaTests;
+			productReference = DE0F8F29C991D50562F3EE14 /* FruitNinjaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C01E25BB39CE0A97B4A62172 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					061AC89B98683DC50256F5F6 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					2C7BBA3029F487100D95031C = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = A4825E138B3EEDAA4D55F7AE /* Build configuration list for PBXProject "FruitNinja" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = AD97EF8DDCE4F258A46F5A86;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EBD7B7B8AE1C9864EB5939B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				061AC89B98683DC50256F5F6 /* FruitNinja */,
+				2C7BBA3029F487100D95031C /* FruitNinjaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F70C368F79B286EDB2C95402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10B049E8796AE23213F52C9 /* AppIcon.icns in Resources */,
+				ED313CEA66708688590D8B09 /* bomb.png in Resources */,
+				ABD797B0AFB2A3E2D15BE323 /* fruit_apple.png in Resources */,
+				DA2A842F0B5BAD5F375947FD /* fruit_apple_half.png in Resources */,
+				F1CE9E75DB517F6B74CC7279 /* fruit_dragonfruit.png in Resources */,
+				98296EAAC67508CC609E655F /* fruit_dragonfruit_half.png in Resources */,
+				06788B925B75DBEA7195AB39 /* fruit_kiwi.png in Resources */,
+				906F6D95476501F9BF5DEB79 /* fruit_kiwi_half.png in Resources */,
+				6486FE21745CE2EBAA8B843A /* fruit_orange.png in Resources */,
+				0BF072380D1C6ACCDB88136D /* fruit_orange_half.png in Resources */,
+				1382A02B8F0E5411915596BD /* fruit_pineapple.png in Resources */,
+				6577F86D64150BD0DDB5E230 /* fruit_pineapple_half.png in Resources */,
+				F23DE86AA4EC00C70A903ED4 /* fruit_watermelon.png in Resources */,
+				94911DBBFCC457327DFEC7BE /* fruit_watermelon_half.png in Resources */,
+				0079AE740D766602259DE85F /* menu_background.png in Resources */,
+				86D1F4A0DE089DC111B0B79C /* music_game.caf in Resources */,
+				47214DB8D81875462F790BA7 /* music_menu.caf in Resources */,
+				D775152E11D221A019F8AA34 /* sfx_bomb.caf in Resources */,
+				5432F8FEA936D7E6C0CBB842 /* sfx_click.caf in Resources */,
+				BEB87C65A174D17741B0E485 /* sfx_combo.caf in Resources */,
+				5671F305476B993BF0019370 /* sfx_countdown.caf in Resources */,
+				5F4685DED4F7F00FE473C8B0 /* sfx_game_over.caf in Resources */,
+				BA5184A1B6CC24E57ED3E69F /* sfx_go.caf in Resources */,
+				FAAB2C4B9621CBC4A71EF123 /* sfx_life_gain.caf in Resources */,
+				F8499B155D389FE534B1D01B /* sfx_life_lost.caf in Resources */,
+				B614FF947C6373EAD542576E /* sfx_slice.caf in Resources */,
+				33D586608F16718C15F964AA /* sfx_tick.caf in Resources */,
+				B6B73406619E491E9866A10C /* spark.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1ABEAA09F24011C44DAEDB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE540A4D8B289A70344D76FB /* DifficultyTests.swift in Sources */,
+				AE4781A1122D24FF5B50CAF7 /* GameSessionTests.swift in Sources */,
+				8286185ABB4AE8D32F21A378 /* LeaderboardStoreTests.swift in Sources */,
+				F552B118BE5BDDD9096B964D /* OneEuroFilterTests.swift in Sources */,
+				2948FDD72544D3AEE2B24B71 /* SliceDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2370A585C6278EE04164F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D1B1F93102E20B7B1ABC29A /* AppDelegate.swift in Sources */,
+				BA05044BB796B1090C7CB4B0 /* AudioManager.swift in Sources */,
+				08BC01BD926D068A2DC8A23B /* BladeTrailNode.swift in Sources */,
+				ECD64ED470BE2EC1CBBDA465 /* DebugCapture.swift in Sources */,
+				D1C372276C344D14327EEA9B /* Difficulty.swift in Sources */,
+				2D9B81CC4D2177E529C84EA1 /* FNHandSample.m in Sources */,
+				A65FA0237763F4B62EB8ABE6 /* FNHandTracker.m in Sources */,
+				24BA76AF01D351D52F950AB8 /* FNOneEuroFilter.m in Sources */,
+				07C81EF15882262A599C09AD /* FruitKind.swift in Sources */,
+				ABE209401C28C1E976FF8E60 /* FruitNode.swift in Sources */,
+				738ED4B9D6D73F94FD0751D7 /* GameOverView.swift in Sources */,
+				311AD8A80C77A22FE90ABB0D /* GameScene.swift in Sources */,
+				FC1DE7A1795EF2CD7465218E /* GameSession.swift in Sources */,
+				915901CA29F82DE0AEFFB231 /* LeaderboardStore.swift in Sources */,
+				570AD639313BE3D28B716571 /* LeaderboardTable.swift in Sources */,
+				F9AC11E5EC563974E30EA2C3 /* LeaderboardView.swift in Sources */,
+				969560E31235045DC1384B84 /* MainWindowController.swift in Sources */,
+				7B41FB925DC5FE0949D708DD /* MenuView.swift in Sources */,
+				CB16C8414B61D42B0DE60FA0 /* RootViewController.swift in Sources */,
+				F31CB6AE9EAC3C5D1AB1253D /* SettingsStore.swift in Sources */,
+				95511868E54960F618F24DE9 /* SettingsView.swift in Sources */,
+				36E74C636C0FC826659DD315 /* SliceDetector.swift in Sources */,
+				2AFE50614A6DF6D11F6DC237 /* Theme.swift in Sources */,
+				F2150F61514F517EEB572C56 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93EB7B11E055B01E267647FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 061AC89B98683DC50256F5F6 /* FruitNinja */;
+			targetProxy = 59E76E5FFB3B14677D394501 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1BA17C51108D2947E0493FB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4F914B459C38A40E5FBCC61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C34F1F5437F9388BAA9D919D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.fruitslice.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitNinja.app/Contents/MacOS/FruitNinja";
+			};
+			name = Debug;
+		};
+		CA5B0C11CFCA8A5D40A49E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FruitNinja/Resources/FruitNinja.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FruitNinja/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.fruitslice;
+				PRODUCT_NAME = FruitNinja;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "FruitNinja/Tracking/FruitNinja-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		E5BAF45754179F1E239925CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.fruitslice.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitNinja.app/Contents/MacOS/FruitNinja";
+			};
+			name = Release;
+		};
+		F64898DA333A8718C6A4E7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FruitNinja/Resources/FruitNinja.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FruitNinja/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sid.fruitslice;
+				PRODUCT_NAME = FruitNinja;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "FruitNinja/Tracking/FruitNinja-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D426199F57EC45BB974BA11 /* Build configuration list for PBXNativeTarget "FruitNinjaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C34F1F5437F9388BAA9D919D /* Debug */,
+				E5BAF45754179F1E239925CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A4825E138B3EEDAA4D55F7AE /* Build configuration list for PBXProject "FruitNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA17C51108D2947E0493FB5 /* Debug */,
+				4F914B459C38A40E5FBCC61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FA675654B4FCC965805FB8EF /* Build configuration list for PBXNativeTarget "FruitNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5B0C11CFCA8A5D40A49E64 /* Debug */,
+				F64898DA333A8718C6A4E7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C01E25BB39CE0A97B4A62172 /* Project object */;
+}

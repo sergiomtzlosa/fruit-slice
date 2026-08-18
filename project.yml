@@ -1,0 +1,78 @@
+name: FruitNinja
+options:
+  minimumXcodeGenVersion: 2.38.0
+  deploymentTarget:
+    macOS: "14.0"
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    DEVELOPMENT_TEAM: ""
+    ENABLE_HARDENED_RUNTIME: YES
+    CLANG_ENABLE_MODULES: YES
+    CLANG_ENABLE_OBJC_ARC: YES
+    GCC_WARN_ABOUT_RETURN_TYPE: YES
+    CLANG_WARN_DOCUMENTATION_COMMENTS: NO
+
+targets:
+  FruitNinja:
+    type: application
+    platform: macOS
+    sources:
+      - path: FruitNinja
+        excludes:
+          - "Resources/**"
+      - path: FruitNinja/Resources/Art
+        buildPhase: resources
+      - path: FruitNinja/Resources/Audio
+        buildPhase: resources
+      - path: FruitNinja/Resources/AppIcon.icns
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_NAME: FruitNinja
+        PRODUCT_BUNDLE_IDENTIFIER: com.sid.fruitslice
+        INFOPLIST_FILE: FruitNinja/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: FruitNinja/Resources/FruitNinja.entitlements
+        SWIFT_OBJC_BRIDGING_HEADER: FruitNinja/Tracking/FruitNinja-Bridging-Header.h
+        GENERATE_INFOPLIST_FILE: NO
+        COMBINE_HIDPI_IMAGES: YES
+        ENABLE_APP_SANDBOX: YES
+        ENABLE_HARDENED_RUNTIME: YES
+
+  FruitNinjaTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: FruitNinjaTests
+    dependencies:
+      - target: FruitNinja
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sid.fruitslice.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/FruitNinja.app/Contents/MacOS/FruitNinja"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+
+schemes:
+  FruitNinja:
+    build:
+      targets:
+        FruitNinja: all
+        FruitNinjaTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - FruitNinjaTests
+    archive:
+      config: Release
