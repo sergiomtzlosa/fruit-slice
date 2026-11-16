@@ -6,3 +6,4 @@ xcuserdata/
 *.xcscmblueprint
 *.xccheckout
 .config
+setup-xcode-binary-release-gh-action.sh
