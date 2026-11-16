@@ -24,7 +24,9 @@ jobs:
       - name: Install XcodeGen and regenerate project
         run: |
           brew install xcodegen
-          xcodegen generate      - name: Build (Release)
+          xcodegen generate
+
+      - name: Build (Release)
         run: |
           xcodebuild \
             -project "$PROJECT_NAME" \
