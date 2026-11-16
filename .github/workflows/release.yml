@@ -3,15 +3,15 @@ name: Build and Release Xcode Binary
 on:
   push:
     tags:
-      - 'v*' # Triggers when pushing tags like v1.0.0
+      - 'v*'
 
 permissions:
-  contents: write # Required to create releases and upload assets
+  contents: write
 
 env:
-  PROJECT_NAME: FruitNinja.xcodeproj
-  SCHEME: FruitNinja
-  APP_NAME: FruitNinja
+  PROJECT_NAME: 'FruitNinja.xcodeproj'
+  SCHEME: 'FruitNinja'
+  APP_NAME: 'FruitNinja'
   CONFIGURATION: Release
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
         run: |
           brew install xcodegen
           xcodegen generate
-      
+
       - name: Build (Release)
         run: |
           xcodebuild \
@@ -44,11 +44,9 @@ jobs:
           test -d "$APP_PATH"
           VERSION="${GITHUB_REF_NAME#v}"
 
-          # 1. Zip the compiled .app bundle
           ditto -c -k --keepParent "$APP_PATH" "$APP_NAME-$VERSION-macos.zip"
-
-          # 2. Create a clean source code .tar.gz from Git HEAD
-          git archive --format=tar.gz --prefix="$APP_NAME-$VERSION/" -o "$APP_NAME-$VERSION-source.tar.gz" HEAD
+          git archive --format=tar.gz --prefix="$APP_NAME-$VERSION/" \
+            -o "$APP_NAME-$VERSION-source.tar.gz" HEAD
 
       - name: Create GitHub Release and Upload Assets
         uses: softprops/action-gh-release@v2
