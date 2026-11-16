@@ -1,5 +1,6 @@
 name: Build and Release Xcode Binary
 
+# Automated release workflow for tagged versions
 on:
   push:
     tags:
