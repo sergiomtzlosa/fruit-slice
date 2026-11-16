@@ -20,12 +20,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Install XcodeGen and regenerate project
         run: |
           brew install xcodegen
           xcodegen generate
 
-      
       - name: Build (Release)
         run: |
           xcodebuild \
